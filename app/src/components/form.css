@@ -1,0 +1,218 @@
+
+.f-body{
+    color: white;
+}
+
+.form {
+    height: 100%;
+    padding-top: 10px;
+}
+
+h1{
+    text-align: center;
+    font-weight: 300;
+    font-size: 55px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro h2 {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: 'Open Sans';
+    background-color: #fff;
+    background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 80% 60%, rgb(0, 0, 0) 0, transparent 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro p{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.boxInfo{
+    padding: 30px 10px;
+    background-color: rgba(191, 191, 191, 0.456);
+    width: 250px;
+    /* height: 100px; */
+    border-radius: 20px;
+    border: 2px white solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ethIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.icon {
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.icon2{
+    margin-top: -30px;
+}
+
+.connect {
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #5ed3fe93, #ff494989, #ffcd3878);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    color: white;
+    font-weight: 600;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+.inputBody {
+    background-color: rgba(159, 159, 159, 0.368);
+    padding: 40px 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input,
+textarea{
+    background-color: rgba(255, 255, 255, 0.691);
+    color: whitesmoke;
+    outline: none;
+    border: 2px solid white;
+}
+
+.inputs input {
+    width: 300px;
+    margin: 10px 0;
+    padding: 12.5px;
+    border-radius: 3px;
+}
+
+textarea {
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.submitBtn {
+    margin-top: 10px;
+    width: 200px;
+    padding: 10px 0;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-image: linear-gradient(90deg, #5ed3fe90, #ff49499d, #ffcd389e);
+    background-size: 400% 400%;
+    animation: gradients 10s ease infinite;
+    color: white;
+    font-weight: 700;
+}
+
+.loading{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: linear-gradient(90deg, #5ed3fe3d, #ff494958, #ffcd383e);
+    animation: .7s spin linear infinite;
+    margin-top: 20px;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: #5ed3feae 0 0 0 0;
+        background-position: 0% 50%;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: #5ed3fe6b 0 0 0 10px;
+        background-position: 100% 50%;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: #5ed3fe1b 0 0 0 16px;
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradients {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+@media screen and (max-width: 770px) {
+    .header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    .connect {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .intro h2{
+        text-align: center;
+    }
+    .intro p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .intro h2{
+        font-size: 40px;
+    }
+    .intro p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .inputBody{
+        padding: 10px;
+    }
+}
